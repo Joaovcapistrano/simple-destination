@@ -1,1 +1,8 @@
-rootProject.name = 'example'
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
+
+rootProject.name = 'simple-destination'
