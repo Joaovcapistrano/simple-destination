@@ -15,8 +15,8 @@ import net.runelite.api.coords.WorldPoint;
 import net.runelite.api.events.GameTick;
 import net.runelite.api.events.MenuEntryAdded;
 import net.runelite.api.events.MenuOpened;
+import net.runelite.api.gameval.InterfaceID;
 import net.runelite.api.widgets.Widget;
-import net.runelite.api.widgets.WidgetInfo;
 import net.runelite.client.config.ConfigManager;
 import net.runelite.client.eventbus.Subscribe;
 import net.runelite.client.plugins.Plugin;
@@ -88,7 +88,7 @@ public class SimpleDestinationPlugin extends Plugin
     @Subscribe
     public void onMenuEntryAdded(MenuEntryAdded event)
     {
-        Widget worldMapView = client.getWidget(WidgetInfo.WORLD_MAP_VIEW);
+        Widget worldMapView = client.getWidget(InterfaceID.Worldmap.MAP_CONTAINER);
 
         if (worldMapView == null)
         {
